@@ -1,168 +1,535 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uz">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tamga Studio: logotip va animatsiya biznes uçun</title>
 <meta name="description" content="Butun Özbekiston bizneslari uçun logotip, animatsiya va bezak. Avval natija, keyin tölov.">
+<link rel="canonical" href="https://tamgastudio.uz/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Tamga Studio">
-<meta property="og:title" content="Tamga Studio: logotip va animatsiya biznes uçun">
-<meta property="og:description" content="Butun Özbekiston bizneslari uçun logotip, animatsiya va bezak. Avval natija, keyin tölov.">
-<meta property="og:locale" content="uz_UZ">
-<meta property="og:locale:alternate" content="ru_RU">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#A8261B">
-<link rel="canonical" href="https://tamgastudio.uz/">
+<meta property="og:title" content="Tamga Studio: sizni tanitadigan belgi">
+<meta property="og:description" content="Logotip, animatsiya va bezak. Avval natija, keyin tölov.">
 <meta property="og:url" content="https://tamgastudio.uz/">
 <meta property="og:image" content="https://tamgastudio.uz/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#A8261B">
 <link rel="alternate" hreflang="uz" href="https://tamgastudio.uz/?lang=uz">
 <link rel="alternate" hreflang="ru" href="https://tamgastudio.uz/?lang=ru">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 88 88'%3E%3Crect width='88' height='88' fill='%23A8261B'/%3E%3Cpath d='M18 22H70M44 22V72' stroke='%23F3EDE2' stroke-width='13'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="fonts/unbounded-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>
-:root{--ink:#16130F;--red:#A8261B;--paper:#F3EDE2;--muted:#4F483F;--line:#DDD3C3;--white:#FFFDF9}
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src:url(fonts/onest-cyrillic-400-normal.woff2) format('woff2');
+  unicode-range: U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;
+}
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src:url(fonts/onest-latin-ext-400-normal.woff2) format('woff2');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src:url(fonts/onest-latin-400-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src:url(fonts/onest-cyrillic-500-normal.woff2) format('woff2');
+  unicode-range: U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;
+}
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src:url(fonts/onest-latin-ext-500-normal.woff2) format('woff2');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src:url(fonts/onest-latin-500-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src:url(fonts/onest-cyrillic-600-normal.woff2) format('woff2');
+  unicode-range: U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;
+}
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src:url(fonts/onest-latin-ext-600-normal.woff2) format('woff2');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src:url(fonts/onest-latin-600-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src:url(fonts/unbounded-cyrillic-500-normal.woff2) format('woff2');
+  unicode-range: U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;
+}
+@font-face {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src:url(fonts/unbounded-latin-ext-500-normal.woff2) format('woff2');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src:url(fonts/unbounded-latin-500-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src:url(fonts/unbounded-cyrillic-700-normal.woff2) format('woff2');
+  unicode-range: U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;
+}
+@font-face {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src:url(fonts/unbounded-latin-ext-700-normal.woff2) format('woff2');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src:url(fonts/unbounded-latin-700-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 800;
+  src:url(fonts/unbounded-cyrillic-800-normal.woff2) format('woff2');
+  unicode-range: U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;
+}
+@font-face {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 800;
+  src:url(fonts/unbounded-latin-ext-800-normal.woff2) format('woff2');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 800;
+  src:url(fonts/unbounded-latin-800-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+:root{
+  --ink:#16130F; --seal:#A8261B; --seal-deep:#7A1A12; --paper:#F3EDE2; --sheet:#FBF7F0; --stone:#6B645A; --line:#DDD3C3;
+  --display:"Unbounded",system-ui,sans-serif; --text:"Onest",system-ui,sans-serif;
+  --wrap:1180px;
+}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased}
-a{color:var(--red)}
-.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
-header{position:sticky;top:0;z-index:10;background:rgba(243,237,226,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
-.bar-in{display:flex;align-items:center;justify-content:space-between;gap:12px;height:64px}
-.logo{display:block;height:36px;width:auto;overflow:visible}
-.hdr-r{display:flex;align-items:center;gap:10px}
-.lang{display:flex;border:1.5px solid var(--ink)}
-.lang button{font:inherit;font-size:14px;font-weight:600;background:none;border:0;color:var(--ink);min-width:44px;min-height:40px;cursor:pointer;padding:0 10px}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--text)}
+img,svg{display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--seal);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:-0.02em;margin:0}
+h2{font-size:clamp(30px,4.4vw,52px);line-height:1.05;max-width:16ch}
+p{margin:0}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 26px;background:var(--seal);color:#fff;text-decoration:none;font:600 16px/1 var(--text);border:0;cursor:pointer;transition:background .2s}
+.btn:hover{background:var(--seal-deep)}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--paper)}
+.btn svg{width:18px;height:18px}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:rgba(243,237,226,.92);backdrop-filter:blur(8px);border-bottom:1px solid transparent;transition:border-color .2s}
+.top.scrolled{border-bottom-color:var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.top .logo svg{height:30px;width:auto}
+.top nav{display:flex;align-items:center;gap:12px}
+.lang{display:flex;border:2px solid var(--ink)}
+.lang button{min-width:44px;min-height:36px;border:0;background:transparent;font:600 14px var(--text);cursor:pointer;color:var(--ink)}
 .lang button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;background:var(--red);color:#fff;font-weight:600;text-decoration:none;border:2px solid var(--red);transition:background .2s,color .2s}
-.btn:hover{background:#8E1F16;border-color:#8E1F16}
-.btn:focus-visible,.lang button:focus-visible,summary:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
-.btn.small{min-height:46px;width:100%;margin-top:auto}
-.btn.inv{background:var(--paper);color:var(--ink);border-color:var(--paper)}
-.btn.inv:hover{background:#fff}
-.hdr-btn{display:none}
-.hero{padding:56px 0 64px}
-.hero .logo{height:auto;width:100%;max-width:520px;margin-bottom:40px}
-h1{font-size:clamp(36px,8vw,68px);line-height:1.05;margin:0 0 18px;font-weight:700;letter-spacing:-.02em;max-width:14ch}
-.hero p{font-size:clamp(18px,2.4vw,22px);color:var(--muted);max-width:34ch;margin:0 0 28px}
-section{padding:64px 0;border-top:1px solid var(--line)}
-h2{font-size:clamp(28px,5vw,42px);margin:0 0 32px;letter-spacing:-.01em;line-height:1.1}
-h3{margin:0 0 8px;font-size:19px}
-.steps{list-style:none;padding:0;margin:0;display:grid;gap:14px;grid-template-columns:1fr}
-.step{display:flex;gap:16px;align-items:flex-start;background:var(--white);padding:20px}
-.step p{margin:0;font-weight:500}
-.num{flex:none;width:40px;height:40px;background:var(--red);color:#fff;display:grid;place-items:center;font-weight:700}
-.grid{display:grid;gap:14px;grid-template-columns:1fr}
-.card{background:var(--white);padding:24px}
-.card p,.why p{margin:0;color:var(--muted)}
-.ic{width:36px;height:36px;fill:none;stroke:var(--red);stroke-width:2.5;margin-bottom:14px}
-.demos{display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr))}
-.demo{aspect-ratio:1;border:1px solid var(--line);padding:18px;display:flex;flex-direction:column;justify-content:flex-end;gap:2px}
-.demo svg{margin-bottom:auto}
-.dname{margin:0;font-weight:700;font-size:16px}
-.dnote{margin:0;font-size:13px;opacity:.85}
-.prices{display:grid;gap:14px;grid-template-columns:1fr}
-.price{background:var(--white);padding:28px 24px;display:flex;flex-direction:column;gap:6px;min-height:260px}
-.price .amount{font-size:30px;font-weight:700;margin:0 0 6px;letter-spacing:-.01em}
-.price p{margin:0 0 16px}
-.price.hl{background:var(--ink);color:var(--paper)}
-.price.hl p{color:var(--paper)}
-.pnote{margin:22px 0 0;font-weight:600}
-.why{background:var(--white);padding:24px;position:relative}
-.why .bar{display:block;width:32px;height:6px;background:var(--red);margin-bottom:16px}
-details{background:var(--white);margin-bottom:10px}
-summary{list-style:none;cursor:pointer;padding:18px 20px;font-weight:600;display:flex;justify-content:space-between;gap:16px;align-items:center;min-height:56px}
-summary::-webkit-details-marker{display:none}
-.chev{flex:none;width:20px;height:20px;fill:none;stroke:var(--ink);stroke-width:2;transition:transform .2s}
-details[open] .chev{transform:rotate(180deg)}
-details p{margin:0;padding:0 20px 20px;color:var(--muted)}
-.cta{background:var(--red);color:#fff;border:0}
-.cta h2{max-width:22ch;color:#fff}
-footer{background:var(--ink);color:var(--paper);padding:40px 0}
-footer .row{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center}
-footer p{margin:0;font-size:15px;opacity:.9}
-footer a{color:var(--paper)}
-@media (min-width:640px){.hdr-btn{display:inline-flex}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.demos{grid-template-columns:repeat(3,minmax(0,1fr))}.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (min-width:960px){.grid{grid-template-columns:repeat(4,minmax(0,1fr))}.steps{grid-template-columns:repeat(4,minmax(0,1fr))}.step{flex-direction:column}.prices{grid-template-columns:repeat(3,minmax(0,1fr))}.whys{grid-template-columns:repeat(3,minmax(0,1fr))}section{padding:88px 0}.hero{padding:80px 0 96px}}
-/* logo animation: line, fill, letters, glint */
-.anim .sq-fill{opacity:0;animation:fill .45s .75s ease-out forwards}
-.anim .sq-line{stroke-dasharray:1;stroke-dashoffset:1;animation:draw .8s .05s cubic-bezier(.6,0,.3,1) forwards}
-.anim .t{stroke-dasharray:1;stroke-dashoffset:1;animation:draw .5s 1.05s cubic-bezier(.6,0,.3,1) forwards}
-.anim .amga{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1s 1.35s cubic-bezier(.6,0,.3,1) forwards}
-.anim .studio{opacity:0;animation:fill .5s 2.1s ease-out forwards}
-.anim .glint{opacity:.55;animation:glint .7s 2.45s ease-in-out forwards}
-.logo .glint{opacity:0}
-.logo.anim .glint{opacity:0;animation:glint .7s 2.45s ease-in-out forwards}
-@keyframes draw{to{stroke-dashoffset:0}}
-@keyframes fill{to{opacity:1}}
-@keyframes glint{0%{opacity:.6;transform:skewX(-20deg) translateX(0)}100%{opacity:0;transform:skewX(-20deg) translateX(460px)}}
-@media (prefers-reduced-motion:reduce){.anim *{animation:none!important;opacity:1!important;stroke-dashoffset:0!important}.anim .glint{opacity:0!important}}
-.dimg{margin:0;background:#fff;border:1px solid #E2D9CB}.dimg img{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:cover}.dimg figcaption{padding:12px 14px;display:flex;flex-direction:column;gap:2px}.dimg .dname{font-weight:600;margin:0}.dimg .dnote{font-size:13px;color:#6B645A}</style>
+.top .btn{min-height:40px;padding:0 18px;font-size:15px}
+
+/* hero */
+.hero{padding:56px 0 88px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(40px,6.4vw,84px);line-height:.98;font-weight:800}
+.hero .lede{margin-top:28px;font-size:20px;line-height:1.5;max-width:30ch;color:#3A352E}
+.hero .actions{margin-top:36px;display:flex;flex-wrap:wrap;align-items:center;gap:20px}
+.hero .note{font-size:15px;color:var(--stone)}
+
+
+/* sections */
+section{padding:104px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:48px}
+.sec-head p{max-width:42ch;color:#3A352E}
+
+/* try it */
+.try{background:var(--ink);color:var(--paper)}
+.try h2{color:var(--paper)}
+.try .sec-head p{color:#CFC6B8}
+.try-grid{display:grid;grid-template-columns:380px 1fr;gap:40px;align-items:stretch}
+.try form{display:flex;flex-direction:column;gap:22px}
+.try label{font-weight:600;font-size:15px;display:block;margin-bottom:8px;color:#CFC6B8}
+.try input[type=text]{width:100%;min-height:58px;padding:0 18px;font:500 20px var(--text);background:var(--paper);color:var(--ink);border:0}
+.swatches{display:flex;gap:10px;flex-wrap:wrap}
+.swatches button{width:44px;height:44px;border:2px solid transparent;cursor:pointer;padding:0;display:grid;grid-template-columns:1fr 1fr}
+.swatches button span{display:block}
+.swatches button[aria-pressed="true"]{border-color:var(--paper);outline:2px solid var(--seal);outline-offset:2px}
+.try .small{font-size:14px;color:#9C9387;line-height:1.5}
+.preview{background:var(--sheet);min-height:360px;display:flex;align-items:center;justify-content:center;padding:32px;position:relative}
+.preview svg{width:100%;max-width:640px;height:auto}
+.preview .replay{position:absolute;right:12px;bottom:12px;background:transparent;border:0;color:var(--stone);font:500 14px var(--text);cursor:pointer;min-height:44px;padding:0 10px;display:flex;align-items:center;gap:6px}
+
+
+/* steps */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:2px solid var(--ink)}
+.steps li{padding:28px 24px 8px 0;position:relative}
+.steps .n{font:800 56px/1 var(--display);color:var(--seal)}
+.steps p{margin-top:18px;font-size:18px;line-height:1.45;max-width:20ch}
+
+/* cases */
+.cases{background:var(--sheet)}
+.strip{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 24px 24px;margin:0 auto;max-width:calc(var(--wrap) + 48px);scrollbar-width:thin}
+.strip figure{flex:0 0 clamp(220px,24vw,270px);margin:0;scroll-snap-align:start}
+.strip img{width:100%;height:auto;aspect-ratio:9/16;object-fit:cover;box-shadow:0 1px 0 var(--line)}
+.strip figcaption{margin-top:12px;display:flex;flex-direction:column}
+.strip figcaption b{font:700 16px var(--display);letter-spacing:-.01em}
+.strip figcaption span{font-size:14px;color:var(--stone)}
+.strip-nav{display:flex;gap:8px}
+.strip-nav button{width:52px;height:52px;border:2px solid var(--ink);background:transparent;cursor:pointer;display:grid;place-items:center}
+.strip-nav button:hover{background:var(--ink);color:var(--paper)}
+.strip-nav svg{width:20px;height:20px}
+
+/* services */
+.svc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:64px}
+.svc div{display:grid;grid-template-columns:40px 1fr;gap:18px;padding:26px 0;border-top:1px solid var(--line)}
+.svc svg{width:32px;height:32px;color:var(--seal)}
+.svc h3{font-size:20px;letter-spacing:-.01em}
+.svc p{margin-top:6px;color:#3A352E;max-width:40ch}
+
+/* prices */
+.prices{background:var(--paper)}
+.plans{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border:2px solid var(--ink)}
+.plan{padding:36px 30px 34px;display:flex;flex-direction:column;gap:18px;background:var(--sheet);position:relative}
+.plan+.plan{border-left:2px solid var(--ink)}
+.plan.rec{background:var(--ink);color:var(--paper)}
+.plan h3{font-size:26px}
+.plan .price{font:800 clamp(30px,3.2vw,42px)/1 var(--display);letter-spacing:-.03em}
+.plan .price small{font:500 16px var(--text);letter-spacing:0;margin-left:6px}
+.plan .days{font-size:15px;color:var(--stone)}
+.plan.rec .days{color:#B8AFA2}
+.plan ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px;flex:1}
+.plan li{padding-left:24px;position:relative;line-height:1.45}
+.plan li::before{content:"";position:absolute;left:0;top:.55em;width:10px;height:10px;background:var(--seal)}
+.plan .btn{align-self:flex-start}
+.plan.rec .btn.ghost{color:var(--paper);box-shadow:inset 0 0 0 2px var(--paper)}
+.plan.rec .btn.ghost:hover{background:var(--paper);color:var(--ink)}
+.seal-badge{position:absolute;top:-22px;right:22px;width:88px;height:88px;transform:rotate(-8deg)}
+.terms{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px 32px;font-weight:500}
+.terms span{display:flex;align-items:center;gap:10px}
+.terms span::before{content:"";width:8px;height:8px;background:var(--ink)}
+
+/* why */
+.why{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:48px}
+.why h3{font-size:22px;line-height:1.2}
+.why p{margin-top:12px;color:#3A352E}
+
+/* faq */
+.faq{max-width:860px}
+.faq details{border-top:1px solid var(--line)}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:24px 48px 24px 0;font:600 19px/1.35 var(--text);position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:8px;top:50%;width:18px;height:18px;margin-top:-9px;background:linear-gradient(var(--ink),var(--ink)) center/18px 2px no-repeat,linear-gradient(var(--ink),var(--ink)) center/2px 18px no-repeat;transition:transform .25s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 48px 24px 0;color:#3A352E;max-width:62ch}
+
+/* final */
+.final{background:var(--seal);color:#fff;padding:112px 0;overflow:hidden}
+.final .wrap{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}
+.final h2{color:#fff;max-width:18ch}
+.final p{margin-top:20px;font-size:19px;max-width:40ch;color:#F6DCD8}
+.final .btn{background:var(--paper);color:var(--ink);margin-top:36px}
+.final .btn:hover{background:#fff}
+.final .bigT{width:min(300px,30vw);height:auto;opacity:.95}
+
+
+.hero{min-height:100vh;min-height:100svh;padding:40px 0 40px;position:relative;display:flex;align-items:center}
+.hero .wrap{width:100%}
+.hero h1{display:flex;flex-direction:column}
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.06em}
+.hero h1 .ln>span{display:block}
+.hero .note{margin-top:20px}
+.stage3d{position:relative;aspect-ratio:1/1;width:100%;max-width:600px;justify-self:end;cursor:pointer}
+.stage3d canvas{position:absolute;inset:0;width:100%!important;height:100%!important}
+.stage3d .lockup{position:absolute;left:50%;bottom:6%;transform:translate(-50%,16px);width:62%;opacity:0;pointer-events:none}
+.stage3d .lockup svg{width:100%;height:auto}
+.stage3d .cap{position:absolute;left:0;right:0;bottom:-2%;text-align:center;font-size:15px;color:var(--stone);opacity:0;transform:translateY(16px)}
+.stage3d.nogl{background:center/60% no-repeat url(apple-touch-icon.png)}
+.scroll-cue{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;font-size:13px;color:var(--stone)}
+.scroll-cue i{width:2px;height:34px;background:linear-gradient(var(--ink) 50%,transparent 0) 0 0/2px 200%;animation:cue 1.8s cubic-bezier(.65,0,.35,1) infinite}
+@keyframes cue{to{background-position:0 -34px}}
+.manifest-sec{padding:120px 0 96px}
+.manifest{font:600 clamp(28px,4.6vw,64px)/1.12 var(--display);letter-spacing:-.025em;max-width:22ch}
+.manifest .w{display:inline-block}
+.marquee{overflow:hidden;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);background:var(--paper);padding:18px 0}
+.marquee .track{display:flex;width:max-content;gap:0}
+.marquee .item{display:flex;align-items:center;gap:28px;padding-right:28px;font:700 clamp(22px,2.6vw,34px)/1 var(--display);letter-spacing:-.02em;white-space:nowrap}
+.marquee .item i{width:16px;height:16px;background:var(--seal);display:block}
+.cases{padding:96px 0 72px;overflow:hidden}
+.cases-head{margin-bottom:0}
+.strip-wrap{overflow:hidden}
+.strip{display:flex;gap:40px;padding:24px 24px 24px max(24px,calc((100vw - var(--wrap))/2 + 24px));width:max-content;overflow:visible;max-width:none;margin:0;scroll-snap-type:none}
+.strip figure{flex:0 0 clamp(240px,22vw,300px);margin:0}
+.strip figure .ph{overflow:hidden}
+.progress{height:2px;background:var(--line);margin-top:28px}
+.progress i{display:block;height:100%;background:var(--seal);transform:scaleX(0);transform-origin:0 50%}
+.faq details .ans{overflow:hidden}
+@media (max-width:899px){
+  .strip-wrap{overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+  .strip figure{scroll-snap-align:start;flex-basis:72vw}
+  .strip{gap:16px;padding-left:24px}
+  .progress{display:none}
+}
+@media (min-width:900px){ .strip-nav{display:none} }
+@media (max-width:960px){ .stage3d{justify-self:center;max-width:460px;margin-top:-10px} .hero{min-height:auto;padding-top:24px} .scroll-cue{display:none} }
+@media (prefers-reduced-motion:reduce){ .scroll-cue i{animation:none} }
+
+footer{padding:40px 0;font-size:14px;color:var(--stone)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+footer svg{height:24px;width:auto}
+
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+@media (max-width:960px){
+  .hero .wrap,.try-grid,.final .wrap{grid-template-columns:1fr}
+  .stage{justify-self:stretch;max-width:none}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .plans{grid-template-columns:1fr}
+  .plan+.plan{border-left:0;border-top:2px solid var(--ink)}
+  .why{grid-template-columns:1fr;gap:32px}
+  .svc{grid-template-columns:1fr}
+  .final .bigT{display:none}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  section{padding:72px 0}
+  .hero{padding:28px 0 64px}
+  .top .btn .t{display:none}
+  .steps{grid-template-columns:1fr}
+  .steps li{padding:22px 0 6px;border-bottom:1px solid var(--line)}
+  .seal-badge{width:72px;height:72px;top:-18px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001s!important;animation-delay:0s!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
 </head>
 <body>
-<header><div class="wrap bar-in">
-<a href="#top" aria-label="Tamga Studio"><svg class="logo hdr" viewBox="0 0 334 88" role="img" aria-label="Tamga Studio">
-<rect class="sq-fill" x="0" y="0" width="88" height="88" fill="#A8261B"/>
-<rect class="sq-line" x="1.5" y="1.5" width="85" height="85" fill="none" stroke="#A8261B" stroke-width="3" pathLength="1"/>
-<path class="t" d="M18 22 H70 M44 22 V72" stroke="#F3EDE2" stroke-width="13" fill="none" pathLength="1"/>
-<g transform="translate(106 10) scale(1.3)"><path class="amga" d="M0 40 L16 3.5 L32 40 M6.5 27 H25.5 M46.5 40 V3.5 L62 26 L77.5 3.5 V40 M125.98 10.02 A18.25 18.25 0 1 0 130.25 21.75 H114 M143 40 L159 3.5 L175 40 M149.5 27 H168.5" fill="none" stroke="#16130F" stroke-width="7" stroke-linejoin="miter" stroke-miterlimit="1" pathLength="1"/></g>
-<path class="studio" d="M110.896484375 87.146484375C112.947265625 87.146484375 114.130859375 86.068359375 114.130859375 84.5859375C114.130859375 83.009765625 112.73046875 82.412109375 111.6171875 82.125L110.767578125 81.90234375C110.099609375 81.7265625 109.197265625 81.416015625 109.197265625 80.58984375C109.197265625 79.8515625 109.865234375 79.3125 110.92578125 79.3125C111.916015625 79.3125 112.625 79.76953125 112.712890625 80.56640625H114.013671875C113.97265625 79.177734375 112.748046875 78.15234375 110.955078125 78.15234375C109.197265625 78.15234375 107.861328125 79.154296875 107.861328125 80.666015625C107.861328125 81.861328125 108.705078125 82.59375 110.134765625 82.974609375L111.154296875 83.255859375C112.091796875 83.5078125 112.8125 83.806640625 112.8125 84.568359375C112.8125 85.412109375 111.998046875 85.974609375 110.890625 85.974609375C109.8828125 85.974609375 109.0390625 85.529296875 108.962890625 84.57421875H107.62109375C107.703125 86.16796875 108.93359375 87.146484375 110.896484375 87.146484375ZM151.659765625 79.41796875H154.384375V87.0H155.726171875V79.41796875H158.4390625V78.26953125H151.659765625ZM199.794140625 87.134765625C201.880078125 87.134765625 203.262890625 85.833984375 203.262890625 84.0V78.26953125H201.92109375V83.888671875C201.92109375 85.06640625 201.106640625 85.921875 199.794140625 85.921875C198.47578125 85.921875 197.649609375 85.06640625 197.649609375 83.888671875V78.26953125H196.313671875V84.0C196.313671875 85.833984375 197.690625 87.134765625 199.794140625 87.134765625ZM244.41875000000002 87.0C247.07304687500002 87.0 248.61406250000002 85.353515625 248.61406250000002 82.623046875C248.61406250000002 79.91015625 247.07304687500002 78.26953125 244.50078125000002 78.26953125H241.57695312500002V87.0ZM242.91289062500002 85.828125V79.44140625H244.41289062500002C246.31718750000002 79.44140625 247.30156250000002 80.572265625 247.30156250000002 82.623046875C247.30156250000002 84.69140625 246.31718750000002 85.828125 244.34257812500002 85.828125ZM287.953515625 78.26953125H286.617578125V87.0H287.953515625ZM329.90625 87.1171875C332.16796875 87.1171875 333.837890625 85.4296875 333.837890625 82.640625C333.837890625 79.83984375 332.16796875 78.15234375 329.90625 78.15234375C327.638671875 78.15234375 325.962890625 79.83984375 325.962890625 82.640625C325.962890625 85.4296875 327.638671875 87.1171875 329.90625 87.1171875ZM329.90625 85.8984375C328.40625 85.8984375 327.287109375 84.75 327.287109375 82.640625C327.287109375 80.525390625 328.40625 79.37109375 329.90625 79.37109375C331.39453125 79.37109375 332.513671875 80.51953125 332.513671875 82.640625C332.513671875 84.75 331.39453125 85.8984375 329.90625 85.8984375Z" fill="#16130F"/>
-<rect class="glint" x="-60" y="-10" width="26" height="110" fill="#FFFFFF" transform="skewX(-20)"/>
-</svg></a>
-<div class="hdr-r">
-<div class="lang" role="group" aria-label="Til / Язык"><button type="button" data-l="uz" aria-pressed="true">UZ</button><button type="button" data-l="ru" aria-pressed="false">RU</button></div>
-<a class="btn hdr-btn" href="https://t.me/tamgauz" target="_blank" rel="noopener" data-k="btn_tg">Telegramda yoziş</a>
-</div></div></header>
-<main id="top">
-<div class="hero"><div class="wrap">
-<svg class="logo anim big" viewBox="0 0 334 88" role="img" aria-label="Tamga Studio">
-<rect class="sq-fill" x="0" y="0" width="88" height="88" fill="#A8261B"/>
-<rect class="sq-line" x="1.5" y="1.5" width="85" height="85" fill="none" stroke="#A8261B" stroke-width="3" pathLength="1"/>
-<path class="t" d="M18 22 H70 M44 22 V72" stroke="#F3EDE2" stroke-width="13" fill="none" pathLength="1"/>
-<g transform="translate(106 10) scale(1.3)"><path class="amga" d="M0 40 L16 3.5 L32 40 M6.5 27 H25.5 M46.5 40 V3.5 L62 26 L77.5 3.5 V40 M125.98 10.02 A18.25 18.25 0 1 0 130.25 21.75 H114 M143 40 L159 3.5 L175 40 M149.5 27 H168.5" fill="none" stroke="#16130F" stroke-width="7" stroke-linejoin="miter" stroke-miterlimit="1" pathLength="1"/></g>
-<path class="studio" d="M110.896484375 87.146484375C112.947265625 87.146484375 114.130859375 86.068359375 114.130859375 84.5859375C114.130859375 83.009765625 112.73046875 82.412109375 111.6171875 82.125L110.767578125 81.90234375C110.099609375 81.7265625 109.197265625 81.416015625 109.197265625 80.58984375C109.197265625 79.8515625 109.865234375 79.3125 110.92578125 79.3125C111.916015625 79.3125 112.625 79.76953125 112.712890625 80.56640625H114.013671875C113.97265625 79.177734375 112.748046875 78.15234375 110.955078125 78.15234375C109.197265625 78.15234375 107.861328125 79.154296875 107.861328125 80.666015625C107.861328125 81.861328125 108.705078125 82.59375 110.134765625 82.974609375L111.154296875 83.255859375C112.091796875 83.5078125 112.8125 83.806640625 112.8125 84.568359375C112.8125 85.412109375 111.998046875 85.974609375 110.890625 85.974609375C109.8828125 85.974609375 109.0390625 85.529296875 108.962890625 84.57421875H107.62109375C107.703125 86.16796875 108.93359375 87.146484375 110.896484375 87.146484375ZM151.659765625 79.41796875H154.384375V87.0H155.726171875V79.41796875H158.4390625V78.26953125H151.659765625ZM199.794140625 87.134765625C201.880078125 87.134765625 203.262890625 85.833984375 203.262890625 84.0V78.26953125H201.92109375V83.888671875C201.92109375 85.06640625 201.106640625 85.921875 199.794140625 85.921875C198.47578125 85.921875 197.649609375 85.06640625 197.649609375 83.888671875V78.26953125H196.313671875V84.0C196.313671875 85.833984375 197.690625 87.134765625 199.794140625 87.134765625ZM244.41875000000002 87.0C247.07304687500002 87.0 248.61406250000002 85.353515625 248.61406250000002 82.623046875C248.61406250000002 79.91015625 247.07304687500002 78.26953125 244.50078125000002 78.26953125H241.57695312500002V87.0ZM242.91289062500002 85.828125V79.44140625H244.41289062500002C246.31718750000002 79.44140625 247.30156250000002 80.572265625 247.30156250000002 82.623046875C247.30156250000002 84.69140625 246.31718750000002 85.828125 244.34257812500002 85.828125ZM287.953515625 78.26953125H286.617578125V87.0H287.953515625ZM329.90625 87.1171875C332.16796875 87.1171875 333.837890625 85.4296875 333.837890625 82.640625C333.837890625 79.83984375 332.16796875 78.15234375 329.90625 78.15234375C327.638671875 78.15234375 325.962890625 79.83984375 325.962890625 82.640625C325.962890625 85.4296875 327.638671875 87.1171875 329.90625 87.1171875ZM329.90625 85.8984375C328.40625 85.8984375 327.287109375 84.75 327.287109375 82.640625C327.287109375 80.525390625 328.40625 79.37109375 329.90625 79.37109375C331.39453125 79.37109375 332.513671875 80.51953125 332.513671875 82.640625C332.513671875 84.75 331.39453125 85.8984375 329.90625 85.8984375Z" fill="#16130F"/>
-<rect class="glint" x="-60" y="-10" width="26" height="110" fill="#FFFFFF" transform="skewX(-20)"/>
-</svg>
-<h1 data-k="hero_h">Sizni tanitadigan belgi</h1>
-<p data-k="hero_p">Butun Özbekiston bizneslari uçun logotip, animatsiya va bezak. Avval natija, keyin tölov.</p>
-<a class="btn" href="https://t.me/tamgauz" target="_blank" rel="noopener" data-k="btn_tg">Telegramda yoziş</a>
-</div></div>
-<section id="how"><div class="wrap"><h2 data-k="h_how">Qanday işlaymiz</h2><ol class="steps"><li class="step"><span class="num" aria-hidden="true">1</span><p data-k="s1">Telegramda nima bilan şuğullanişingizni yozasiz</p></li><li class="step"><span class="num" aria-hidden="true">2</span><p data-k="s2">Biz 10 ta variant körsatamiz</p></li><li class="step"><span class="num" aria-hidden="true">3</span><p data-k="s3">Eng yaxşisini tanlaysiz, 3 ta tuzatiş bepul</p></li><li class="step"><span class="num" aria-hidden="true">4</span><p data-k="s4">Topşirilgandan keyin tölaysiz va fayllarni olasiz</p></li></ol></div></section>
-<section id="services"><div class="wrap"><h2 data-k="h_srv">Xizmatlar</h2><div class="grid"><article class="card"><svg class="ic" viewBox="0 0 40 40" aria-hidden="true"><rect x="6" y="6" width="28" height="28"/><path d="M13 14h14M20 14v14"/></svg><h3 data-k="v1t">Logotip</h3><p data-k="v1">Tanlaş uçun 10 variant, aniq geometriya, kiçik avatarda ham yaxşi körinadi.</p></article><article class="card"><svg class="ic" viewBox="0 0 40 40" aria-hidden="true"><path d="M6 30 L20 8 L34 30"/><path d="M11 22h18" stroke-dasharray="3 3"/></svg><h3 data-k="v2t">Logotip animatsiyasi</h3><p data-k="v2">Çiziq, rang, harflar, yaltiraş. Soniyasiga 60 kadr, silliq. Post, storis va video uçun.</p></article><article class="card"><svg class="ic" viewBox="0 0 40 40" aria-hidden="true"><rect x="10" y="4" width="20" height="32" rx="3"/><circle cx="20" cy="15" r="5"/></svg><h3 data-k="v3t">Storis va muqovalar</h3><p data-k="v3">Doimiy storislar uçun ikonkalar, Telegram va Instagram muqovalari, post şablonlari.</p></article><article class="card"><svg class="ic" viewBox="0 0 40 40" aria-hidden="true"><rect x="6" y="6" width="11" height="11"/><rect x="23" y="6" width="11" height="11"/><rect x="6" y="23" width="11" height="11"/><path d="M23 23h4v4h-4zM30 30h4v4h-4z"/></svg><h3 data-k="v4t">QR menyu va narxlar</h3><p data-k="v4">Mehmon kamerani tutadi va menyu yoki narxlarni köradi.</p></article><article class="card"><svg class="ic" viewBox="0 0 40 40" aria-hidden="true"><rect x="5" y="7" width="30" height="26" rx="2"/><path d="M5 14h30"/></svg><h3 data-k="v5t">Mini sayt</h3><p data-k="v5">Bir sahifa: siz kimsiz, nima taklif qilasiz, qanday boğlaniş mumkin.</p></article><article class="card"><svg class="ic" viewBox="0 0 40 40" aria-hidden="true"><path d="M6 19 L34 7 L28 33 L19 24 Z"/><path d="M19 24 L34 7"/></svg><h3 data-k="v6t">Telegram bot</h3><p data-k="v6">Siz band bölganingizda arizalarni qabul qiladi va köp beriladigan savollarga javob beradi.</p></article><article class="card"><svg class="ic" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 6h20l4 4v24H8z"/><path d="M13 16h14M13 22h14M13 28h8"/></svg><h3 data-k="v7t">Brendbuk</h3><p data-k="v7">Qoidalar: logotip, ranglar va şriftlardan qanday foydalaniş.</p></article></div></div></section>
-<section id="examples"><div class="wrap"><h2 data-k="h_ex">Iş namunalari</h2><div class="demos"><figure class="dimg"><img src="cases/case1.jpg" alt="Sariq Fil, demo keys" loading="lazy" width="720" height="1280"><figcaption><span class="dname">Sariq Fil</span><span class="dnote" data-k="ex_note">Demo keys, brend töqima</span></figcaption></figure><figure class="dimg"><img src="cases/case2.jpg" alt="Temir Taroq, demo keys" loading="lazy" width="720" height="1280"><figcaption><span class="dname">Temir Taroq</span><span class="dnote" data-k="ex_note">Demo keys, brend töqima</span></figcaption></figure><figure class="dimg"><img src="cases/case3.jpg" alt="Olmos Tabassum, demo keys" loading="lazy" width="720" height="1280"><figcaption><span class="dname">Olmos Tabassum</span><span class="dnote" data-k="ex_note">Demo keys, brend töqima</span></figcaption></figure><figure class="dimg"><img src="cases/case4.jpg" alt="Binafsha Qutisi, demo keys" loading="lazy" width="720" height="1280"><figcaption><span class="dname">Binafsha Qutisi</span><span class="dnote" data-k="ex_note">Demo keys, brend töqima</span></figcaption></figure><figure class="dimg"><img src="cases/case5.jpg" alt="Ğildirak Usta, demo keys" loading="lazy" width="720" height="1280"><figcaption><span class="dname">Ğildirak Usta</span><span class="dnote" data-k="ex_note">Demo keys, brend töqima</span></figcaption></figure><figure class="dimg"><img src="cases/case6.jpg" alt="Qozon Yöli, demo keys" loading="lazy" width="720" height="1280"><figcaption><span class="dname">Qozon Yöli</span><span class="dnote" data-k="ex_note">Demo keys, brend töqima</span></figcaption></figure></div></div></section>
-<section id="prices"><div class="wrap"><h2 data-k="h_price">Narxlar</h2><div class="prices"><article class="price"><h3 data-k="p1n">Start</h3><p class="amount" data-k="p1p">500 000 söm</p><p data-k="p1">Logotip yoki logotip animatsiyasi.</p><a class="btn small" href="https://t.me/tamgauz" target="_blank" rel="noopener" data-k="btn_tg">Telegramda yoziş</a></article><article class="price hl"><h3 data-k="p2n">Brend</h3><p class="amount" data-k="p2p">1 500 000 söm</p><p data-k="p2">Logotip, animatsiya, storis, muqovalar va şablonlar.</p><a class="btn small inv" href="https://t.me/tamgauz" target="_blank" rel="noopener" data-k="btn_tg">Telegramda yoziş</a></article><article class="price"><h3 data-k="p3n">Premium</h3><p class="amount" data-k="p3p">3 000 000 söm</p><p data-k="p3">«Brend»dagi hamma narsa, sayt, bot, QR menyu, xaritalar va brendbuk.</p><a class="btn small" href="https://t.me/tamgauz" target="_blank" rel="noopener" data-k="btn_tg">Telegramda yoziş</a></article></div><p class="pnote" data-k="p_note">Oldindan tölov yöq. Topşirilgandan keyin tölaysiz.</p></div></section>
-<section id="why"><div class="wrap"><h2 data-k="h_why">Nega biz</h2><div class="grid whys"><article class="why"><span class="bar" aria-hidden="true"></span><h3 data-k="w1t">Oldindan tölovsiz.</h3><p data-k="w1">Tayyor işni körasiz, keyin tölaysiz.</p></article><article class="why"><span class="bar" aria-hidden="true"></span><h3 data-k="w2t">Tanlaş imkoni.</h3><p data-k="w2">10 ta logotip va 10 ta animatsiya varianti.</p></article><article class="why"><span class="bar" aria-hidden="true"></span><h3 data-k="w3t">Hammasi bir uslubda.</h3><p data-k="w3">Logotip, storis, menyu, sayt va botni bitta jamoa qiladi.</p></article></div></div></section>
-<section id="faq"><div class="wrap"><h2 data-k="h_faq">Savollar</h2><details><summary><span data-k="q1">Nega oldindan tölovsiz?</span><svg class="chev" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary><p data-k="a1">Işimizga işonamiz. Natijani körasiz va yoqsa tölaysiz.</p></details><details><summary><span data-k="q2">Birorta variant yoqmasa-çi?</span><svg class="chev" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary><p data-k="a2">Fikringizni hisobga olib yangilarini qilamiz. Ular ham mos kelmasa, heç narsa tölamaysiz.</p></details><details><summary><span data-k="q3">Neçta tuzatiş?</span><svg class="chev" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary><p data-k="a3">3 ta tuzatiş bepul. Keyingilarini alohida kelişamiz.</p></details><details><summary><span data-k="q4">Qança kutiş kerak?</span><svg class="chev" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary><p data-k="a4">Start 2 kun, Brend 5 kun, Premium 10 iş kuni.</p></details><details><summary><span data-k="q5">Qanday tölanadi?</span><svg class="chev" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary><p data-k="a5">Iş topşirilgandan keyin kartaga ötkaziş orqali.</p></details><details><summary><span data-k="q6">Nima olaman?</span><svg class="chev" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary><p data-k="a6">Logotip SVG, PNG va PDF formatida, animatsiya post va storis uçun MP4 formatida, manba fayllar.</p></details><details><summary><span data-k="q7">Mening şahrim bilan işlaysizmi?</span><svg class="chev" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary><p data-k="a7">Ha. Butun Özbekiston bölab Telegram orqali masofadan işlaymiz.</p></details><details><summary><span data-k="q8">Özimning logotipimni qoldirsa böladimi?</span><svg class="chev" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></summary><p data-k="a8">Ha. Logotipingizni özgartirmasdan animatsiya va bezak qilamiz.</p></details></div></section>
-<section class="cta"><div class="wrap"><h2 data-k="cta_h">Nima bilan şuğullanişingizni yozing. Birinçi variantlarni bepul körsatamiz.</h2><a class="btn inv" href="https://t.me/tamgauz" target="_blank" rel="noopener" data-k="cta_b">@tamgauz ga yoziş</a></div></section>
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="Tamga Studio"><svg viewBox="0 0 333.5 88" aria-hidden="true"><rect x="0" y="0" width="88" height="88" fill="#A8261B"/><path d="M18 22 H70 M44 22 V72" stroke="#F3EDE2" stroke-width="13" fill="none"/><g transform="translate(106 10) scale(1.3)"><path d="M0 40 L16 3.5 L32 40 M6.5 27 H25.5 M46.5 40 V3.5 L62 26 L77.5 3.5 V40 M125.98 10.02 A18.25 18.25 0 1 0 130.25 21.75 H114 M143 40 L159 3.5 L175 40 M149.5 27 H168.5" fill="none" stroke="#16130F" stroke-width="7" stroke-linejoin="miter" stroke-miterlimit="1"/></g><path d="M110.896484375 87.146484375C112.947265625 87.146484375 114.130859375 86.068359375 114.130859375 84.5859375C114.130859375 83.009765625 112.73046875 82.412109375 111.6171875 82.125L110.767578125 81.90234375C110.099609375 81.7265625 109.197265625 81.416015625 109.197265625 80.58984375C109.197265625 79.8515625 109.865234375 79.3125 110.92578125 79.3125C111.916015625 79.3125 112.625 79.76953125 112.712890625 80.56640625H114.013671875C113.97265625 79.177734375 112.748046875 78.15234375 110.955078125 78.15234375C109.197265625 78.15234375 107.861328125 79.154296875 107.861328125 80.666015625C107.861328125 81.861328125 108.705078125 82.59375 110.134765625 82.974609375L111.154296875 83.255859375C112.091796875 83.5078125 112.8125 83.806640625 112.8125 84.568359375C112.8125 85.412109375 111.998046875 85.974609375 110.890625 85.974609375C109.8828125 85.974609375 109.0390625 85.529296875 108.962890625 84.57421875H107.62109375C107.703125 86.16796875 108.93359375 87.146484375 110.896484375 87.146484375ZM151.659765625 79.41796875H154.384375V87.0H155.726171875V79.41796875H158.4390625V78.26953125H151.659765625ZM199.794140625 87.134765625C201.880078125 87.134765625 203.262890625 85.833984375 203.262890625 84.0V78.26953125H201.92109375V83.888671875C201.92109375 85.06640625 201.106640625 85.921875 199.794140625 85.921875C198.47578125 85.921875 197.649609375 85.06640625 197.649609375 83.888671875V78.26953125H196.313671875V84.0C196.313671875 85.833984375 197.690625 87.134765625 199.794140625 87.134765625ZM244.41875000000002 87.0C247.07304687500002 87.0 248.61406250000002 85.353515625 248.61406250000002 82.623046875C248.61406250000002 79.91015625 247.07304687500002 78.26953125 244.50078125000002 78.26953125H241.57695312500002V87.0ZM242.91289062500002 85.828125V79.44140625H244.41289062500002C246.31718750000002 79.44140625 247.30156250000002 80.572265625 247.30156250000002 82.623046875C247.30156250000002 84.69140625 246.31718750000002 85.828125 244.34257812500002 85.828125ZM287.953515625 78.26953125H286.617578125V87.0H287.953515625ZM329.90625 87.1171875C332.16796875 87.1171875 333.837890625 85.4296875 333.837890625 82.640625C333.837890625 79.83984375 332.16796875 78.15234375 329.90625 78.15234375C327.638671875 78.15234375 325.962890625 79.83984375 325.962890625 82.640625C325.962890625 85.4296875 327.638671875 87.1171875 329.90625 87.1171875ZM329.90625 85.8984375C328.40625 85.8984375 327.287109375 84.75 327.287109375 82.640625C327.287109375 80.525390625 328.40625 79.37109375 329.90625 79.37109375C331.39453125 79.37109375 332.513671875 80.51953125 332.513671875 82.640625C332.513671875 84.75 331.39453125 85.8984375 329.90625 85.8984375Z" fill="#16130F"/></svg></a>
+    <nav aria-label="Til / Язык">
+      <div class="lang" role="group" aria-label="Til / Язык">
+        <button type="button" data-lang="uz" aria-pressed="true">UZ</button>
+        <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+      </div>
+      <a class="btn" href="https://t.me/tamgauz" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.4 4.1 2.9 11.2c-1.3.5-1.3 1.2-.2 1.6l4.7 1.5 1.8 5.6c.2.6.1.9.8.9.5 0 .7-.2 1-.5l2.3-2.2 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.7c.3-1.3-.5-1.9-1.5-1.5zM8.6 14l9.3-5.9c.5-.3.9-.1.5.2l-7.9 7.2-.3 3.4L8.6 14z"/></svg><span class="t" data-k="cta_short">Telegramda yoziş</span></a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap">
+    <div class="hero-copy">
+      <h1 id="h1"><span class="ln"><span data-k="h1a">Sizni</span></span><span class="ln"><span data-k="h1b">tanitadigan</span></span><span class="ln"><span data-k="h1c">belgi</span></span></h1>
+      <p class="lede" data-k="lede">Butun Özbekiston bizneslari uçun logotip, animatsiya va bezak. Avval natija, keyin tölov.</p>
+      <div class="actions">
+        <a class="btn" href="https://t.me/tamgauz" target="_blank" rel="noopener" data-k="cta">Telegramda yoziş</a>
+        <a class="btn ghost" href="#try" data-k="cta_try">Belgingizni köring</a>
+      </div>
+      <p class="note" data-k="note">Oldindan tölov yöq. 3 ta tuzatiş bepul.</p>
+    </div>
+    <div class="stage3d" id="stage3d" role="img" aria-label="3D muhr Tamga belgisini qogözga bosadi">
+      <p class="after-stamp cap" data-k="cap">Bitta belgi. Har joyda bir xil.</p>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"><span data-k="scroll">Pastga suring</span><i></i></div>
+</section>
+<section class="manifest-sec" aria-label="Tamga"><div class="wrap"><p id="manifest" class="manifest"></p></div></section>
+<div class="marquee" aria-hidden="true"><div class="track"><span class="item"><span data-k="m0">Qahvaxona</span><i></i></span><span class="item"><span data-k="m1">Sartaroşxona</span><i></i></span><span class="item"><span data-k="m2">Klinika</span><i></i></span><span class="item"><span data-k="m3">Gul dökoni</span><i></i></span><span class="item"><span data-k="m4">Avtoservis</span><i></i></span><span class="item"><span data-k="m5">Çoyxona</span><i></i></span><span class="item"><span data-k="m6">Restoran</span><i></i></span><span class="item"><span data-k="m7">Mehmonxona</span><i></i></span><span class="item"><span data-k="m8">Salon</span><i></i></span><span class="item"><span data-k="m9">Fitnes</span><i></i></span><span class="item"><span data-k="m0">Qahvaxona</span><i></i></span><span class="item"><span data-k="m1">Sartaroşxona</span><i></i></span><span class="item"><span data-k="m2">Klinika</span><i></i></span><span class="item"><span data-k="m3">Gul dökoni</span><i></i></span><span class="item"><span data-k="m4">Avtoservis</span><i></i></span><span class="item"><span data-k="m5">Çoyxona</span><i></i></span><span class="item"><span data-k="m6">Restoran</span><i></i></span><span class="item"><span data-k="m7">Mehmonxona</span><i></i></span><span class="item"><span data-k="m8">Salon</span><i></i></span><span class="item"><span data-k="m9">Fitnes</span><i></i></span></div></div>
+
+<section class="try" id="try" aria-labelledby="try-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="try-h" data-k="try_h">Belgingizni bir soniyada köring</h2>
+      <p data-k="try_p">Biznesingiz nomini yozing. Bu tez qoralama, haqiqiy 10 ta variantni qölda qilamiz.</p>
+    </div>
+    <div class="try-grid">
+      <form id="tryform" onsubmit="return false">
+        <div>
+          <label for="biz" data-k="try_label">Biznes nomi</label>
+          <input id="biz" type="text" maxlength="24" autocomplete="off" value="Nur Kafe">
+        </div>
+        <div>
+          <span class="vh" id="sw-l" data-k="try_color">Rang</span>
+          <p style="font-weight:600;font-size:15px;color:#CFC6B8;margin-bottom:8px" aria-hidden="true" data-k="try_color">Rang</p>
+          <div class="swatches" role="group" aria-labelledby="sw-l" id="swatches"></div>
+        </div>
+        <a class="btn" id="try-cta" href="https://t.me/tamgauz" target="_blank" rel="noopener" data-k="try_cta">10 ta variant istayman</a>
+        <p class="small" data-k="try_small">Variantlarni körib, yoqsa tölaysiz. Oldindan pul olmaymiz.</p>
+      </form>
+      <div class="preview" aria-live="polite">
+        <svg id="demo" viewBox="0 0 600 220" role="img" aria-label="Qoralama logotip">
+<defs><clipPath id="clipd"><rect class="clipr" x="0" y="0" width="88" height="88"/></clipPath>
+<linearGradient id="gl2" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".5"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
+<rect class="bgr" width="600" height="220" fill="#FBF7F0"/>
+<g class="grp">
+  <rect class="sqfill" width="88" height="88" fill="#A8261B"/>
+  <rect class="sq" x="3" y="3" width="82" height="82" fill="none" stroke="#A8261B" stroke-width="6"/>
+  <text class="ini" x="44" y="66" text-anchor="middle" font-family="Unbounded" font-weight="800" font-size="58" fill="#F3EDE2">N</text>
+  <g clip-path="url(#clipd)"><rect class="gl" x="-30" y="-10" width="26" height="110" fill="url(#gl2)" transform="skewX(-18)"/></g>
+  <text class="rest" x="104" y="62" font-family="Unbounded" font-weight="700" font-size="50" letter-spacing="-1" fill="#16130F">UR KAFE</text>
+  <text class="sub" x="106" y="86" font-family="Onest" font-weight="500" font-size="15" letter-spacing="2" fill="#16130F" data-k="demo_sub">Tamga qoralamasi</text>
+</g></svg>
+        <button type="button" class="replay" id="replay" data-k="replay">Qayta körsatiş</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="how-h">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="how-h" data-k="how_h">Qanday işlaymiz</h2></div>
+    <ol class="steps">
+      <li><span class="n">1</span><p data-k="s1">Telegramda nima bilan şuğullanişingizni yozasiz</p></li>
+      <li><span class="n">2</span><p data-k="s2">Biz 10 ta variant körsatamiz</p></li>
+      <li><span class="n">3</span><p data-k="s3">Eng yaxşisini tanlaysiz, 3 ta tuzatiş bepul</p></li>
+      <li><span class="n">4</span><p data-k="s4">Topşirilgandan keyin tölaysiz va fayllarni olasiz</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="cases" aria-labelledby="cases-h">
+  <div class="wrap cases-head">
+    <div class="sec-head">
+      <div><h2 id="cases-h" data-k="cases_h">Iş namunalari</h2><p style="margin-top:14px;color:var(--stone)" data-k="cases_p">Bular demo keyslar, brendlar töqima.</p></div>
+      <div class="strip-nav">
+        <button type="button" id="prev" aria-label="Oldingi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <button type="button" id="next" aria-label="Keyingi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
+  </div>
+  <div class="strip-wrap" id="strip-wrap"><div class="strip" id="strip"><figure><div class="ph"><img src="cases/case1.jpg" alt="Sariq Fil" loading="lazy" width="720" height="1280"></div><figcaption><b>Sariq Fil</b><span data-k="c0">Qahvaxona, Samarqand</span></figcaption></figure><figure><div class="ph"><img src="cases/case2.jpg" alt="Temir Taroq" loading="lazy" width="720" height="1280"></div><figcaption><b>Temir Taroq</b><span data-k="c1">Sartaroşxona, Namangan</span></figcaption></figure><figure><div class="ph"><img src="cases/case3.jpg" alt="Olmos Tabassum" loading="lazy" width="720" height="1280"></div><figcaption><b>Olmos Tabassum</b><span data-k="c2">Stomatologiya, Andijon</span></figcaption></figure><figure><div class="ph"><img src="cases/case4.jpg" alt="Binafsha Qutisi" loading="lazy" width="720" height="1280"></div><figcaption><b>Binafsha Qutisi</b><span data-k="c3">Gul dökoni, Buxoro</span></figcaption></figure><figure><div class="ph"><img src="cases/case5.jpg" alt="Ğildirak Usta" loading="lazy" width="720" height="1280"></div><figcaption><b>Ğildirak Usta</b><span data-k="c4">Avtoservis, Qarşi</span></figcaption></figure><figure><div class="ph"><img src="cases/case6.jpg" alt="Qozon Yöli" loading="lazy" width="720" height="1280"></div><figcaption><b>Qozon Yöli</b><span data-k="c5">Çoyxona, Farğona</span></figcaption></figure></div></div>
+  <div class="wrap"><div class="progress"><i></i></div></div>
+</section>
+
+<section aria-labelledby="svc-h">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="svc-h" data-k="svc_h">Nima qilamiz</h2></div>
+    <div class="svc">
+      <div><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="5" width="22" height="22"/><path d="M11 12h10M16 12v10"/></svg><div><h3 data-k="v0h">Logotip</h3><p data-k="v0p">Tanlaş uçun 10 variant, aniq geometriya, kiçik avatarda ham yaxşi körinadi.</p></div></div><div><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 26 L16 6 L27 26"/><path d="M9.5 19h13" stroke-dasharray="2 3"/></svg><div><h3 data-k="v1h">Logotip animatsiyasi</h3><p data-k="v1p">Çiziq, rang, harflar, yaltiraş. Soniyasiga 60 kadr, silliq. Post, storis va video uçun.</p></div></div><div><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="16" cy="16" r="11"/><circle cx="16" cy="16" r="5"/></svg><div><h3 data-k="v2h">Storis va muqovalar</h3><p data-k="v2p">Doimiy storislar uçun ikonkalar, Telegram va Instagram muqovalari, post şablonlari.</p></div></div><div><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="5" y="5" width="9" height="9"/><rect x="18" y="5" width="9" height="9"/><rect x="5" y="18" width="9" height="9"/><path d="M18 18h4v4h-4zM24 24h3v3h-3z"/></svg><div><h3 data-k="v3h">QR menyu va narxlar</h3><p data-k="v3p">Mehmon kamerani tutadi va menyu yoki narxlarni köradi.</p></div></div><div><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="4" y="6" width="24" height="20"/><path d="M4 12h24"/></svg><div><h3 data-k="v4h">Mini sayt</h3><p data-k="v4p">Bir sahifa: siz kimsiz, nima taklif qilasiz, qanday boğlaniş mumkin.</p></div></div><div><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 15 L27 6 L21 26 L15 18 Z M15 18 L27 6"/></svg><div><h3 data-k="v5h">Telegram bot</h3><p data-k="v5p">Siz band bölganingizda arizalarni qabul qiladi va köp beriladigan savollarga javob beradi.</p></div></div><div><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M6 5h16l4 4v18H6z"/><path d="M11 13h10M11 18h10M11 23h6"/></svg><div><h3 data-k="v6h">Brendbuk</h3><p data-k="v6p">Qoidalar: logotip, ranglar va şriftlardan qanday foydalaniş.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="prices" id="prices" aria-labelledby="pr-h">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="pr-h" data-k="pr_h">Narxlar</h2><p data-k="pr_p">Narx oldindan aniq. Iş yoqmasa, tölamaysiz.</p></div>
+    <div class="plans">
+      <div class="plan"><h3 data-k="p0n">Start</h3><div class="price">500 000<small data-k="cur">söm</small></div><div class="days" data-k="p0d">2 kun</div><ul><li data-k="p0i0">Logotip, 10 variant</li><li data-k="p0i1">yoki logotip animatsiyasi, 10 variant</li><li data-k="p0i2">Post va storis formatlari</li></ul><a class="btn ghost" href="https://t.me/tamgauz" target="_blank" rel="noopener" data-k="choose">Tanlaş</a></div><div class="plan rec"><svg class="seal-badge" viewBox="0 0 88 88" aria-hidden="true"><rect width="88" height="88" fill="#A8261B"/><rect x="5" y="5" width="78" height="78" fill="none" stroke="#F3EDE2" stroke-width="1.5"/><text x="44" y="50" text-anchor="middle" font-family="Unbounded" font-weight="700" font-size="13" fill="#F3EDE2" data-k="rec">Tavsiya</text></svg><h3 data-k="p1n">Brend</h3><div class="price">1 500 000<small data-k="cur">söm</small></div><div class="days" data-k="p1d">5 kun</div><ul><li data-k="p1i0">Logotip, 10 variant</li><li data-k="p1i1">Logotip animatsiyasi, 10 variant</li><li data-k="p1i2">6 ta storis ikonkasi</li><li data-k="p1i3">Telegram va Instagram muqovalari</li><li data-k="p1i4">6 ta post şabloni</li></ul><a class="btn" href="https://t.me/tamgauz" target="_blank" rel="noopener" data-k="choose">Tanlaş</a></div><div class="plan"><h3 data-k="p2n">Premium</h3><div class="price">3 000 000<small data-k="cur">söm</small></div><div class="days" data-k="p2d">10 iş kuni</div><ul><li data-k="p2i0">«Brend»dagi hamma narsa</li><li data-k="p2i1">QR menyu yoki narxlar</li><li data-k="p2i2">Mini sayt</li><li data-k="p2i3">Arizalar uçun Telegram bot</li><li data-k="p2i4">Yandex va Google xaritalarida kartoçka</li><li data-k="p2i5">Brendbuk</li></ul><a class="btn ghost" href="https://t.me/tamgauz" target="_blank" rel="noopener" data-k="choose">Tanlaş</a></div>
+    </div>
+    <div class="terms"><span data-k="t1">Oldindan tölov yöq</span><span data-k="t2">Topşirilgandan keyin kartaga</span><span data-k="t3">3 ta tuzatiş bepul</span></div>
+  </div>
+</section>
+
+<section aria-labelledby="why-h">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="why-h" data-k="why_h">Nega Tamga</h2></div>
+    <div class="why">
+      <div><h3 data-k="w1h">Oldindan tölovsiz</h3><p data-k="w1p">Tayyor işni körasiz, keyin tölaysiz.</p></div>
+      <div><h3 data-k="w2h">Tanlaş imkoni</h3><p data-k="w2p">10 ta logotip va 10 ta animatsiya varianti.</p></div>
+      <div><h3 data-k="w3h">Hammasi bir uslubda</h3><p data-k="w3p">Logotip, storis, menyu, sayt va botni bitta jamoa qiladi.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0" aria-labelledby="faq-h">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="faq-h" data-k="faq_h">Savollar</h2></div>
+    <div class="faq" id="faq"></div>
+  </div>
+</section>
+
+<section class="final" aria-labelledby="fin-h">
+  <div class="wrap">
+    <div>
+      <h2 id="fin-h" data-k="fin_h">Nima bilan şuğullanişingizni yozing</h2>
+      <p data-k="fin_p">Birinçi variantlarni bepul körsatamiz. Javob odatda bir soat içida.</p>
+      <a class="btn" href="https://t.me/tamgauz" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.4 4.1 2.9 11.2c-1.3.5-1.3 1.2-.2 1.6l4.7 1.5 1.8 5.6c.2.6.1.9.8.9.5 0 .7-.2 1-.5l2.3-2.2 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.7c.3-1.3-.5-1.9-1.5-1.5zM8.6 14l9.3-5.9c.5-.3.9-.1.5.2l-7.9 7.2-.3 3.4L8.6 14z"/></svg><span data-k="fin_cta">@tamgauz ga yoziş</span></a>
+    </div>
+    <svg class="bigT" viewBox="0 0 88 88" aria-hidden="true"><rect width="88" height="88" fill="#F3EDE2"/><path d="M18 22H70M44 22V72" stroke="#A8261B" stroke-width="13" fill="none"/></svg>
+  </div>
+</section>
 </main>
-<footer><div class="wrap row">
-<svg class="logo ft" style="height:32px" viewBox="0 0 334 88" role="img" aria-label="Tamga Studio">
-<rect class="sq-fill" x="0" y="0" width="88" height="88" fill="#A8261B"/>
-<rect class="sq-line" x="1.5" y="1.5" width="85" height="85" fill="none" stroke="#A8261B" stroke-width="3" pathLength="1"/>
-<path class="t" d="M18 22 H70 M44 22 V72" stroke="#F3EDE2" stroke-width="13" fill="none" pathLength="1"/>
-<g transform="translate(106 10) scale(1.3)"><path class="amga" d="M0 40 L16 3.5 L32 40 M6.5 27 H25.5 M46.5 40 V3.5 L62 26 L77.5 3.5 V40 M125.98 10.02 A18.25 18.25 0 1 0 130.25 21.75 H114 M143 40 L159 3.5 L175 40 M149.5 27 H168.5" fill="none" stroke="#F3EDE2" stroke-width="7" stroke-linejoin="miter" stroke-miterlimit="1" pathLength="1"/></g>
-<path class="studio" d="M110.896484375 87.146484375C112.947265625 87.146484375 114.130859375 86.068359375 114.130859375 84.5859375C114.130859375 83.009765625 112.73046875 82.412109375 111.6171875 82.125L110.767578125 81.90234375C110.099609375 81.7265625 109.197265625 81.416015625 109.197265625 80.58984375C109.197265625 79.8515625 109.865234375 79.3125 110.92578125 79.3125C111.916015625 79.3125 112.625 79.76953125 112.712890625 80.56640625H114.013671875C113.97265625 79.177734375 112.748046875 78.15234375 110.955078125 78.15234375C109.197265625 78.15234375 107.861328125 79.154296875 107.861328125 80.666015625C107.861328125 81.861328125 108.705078125 82.59375 110.134765625 82.974609375L111.154296875 83.255859375C112.091796875 83.5078125 112.8125 83.806640625 112.8125 84.568359375C112.8125 85.412109375 111.998046875 85.974609375 110.890625 85.974609375C109.8828125 85.974609375 109.0390625 85.529296875 108.962890625 84.57421875H107.62109375C107.703125 86.16796875 108.93359375 87.146484375 110.896484375 87.146484375ZM151.659765625 79.41796875H154.384375V87.0H155.726171875V79.41796875H158.4390625V78.26953125H151.659765625ZM199.794140625 87.134765625C201.880078125 87.134765625 203.262890625 85.833984375 203.262890625 84.0V78.26953125H201.92109375V83.888671875C201.92109375 85.06640625 201.106640625 85.921875 199.794140625 85.921875C198.47578125 85.921875 197.649609375 85.06640625 197.649609375 83.888671875V78.26953125H196.313671875V84.0C196.313671875 85.833984375 197.690625 87.134765625 199.794140625 87.134765625ZM244.41875000000002 87.0C247.07304687500002 87.0 248.61406250000002 85.353515625 248.61406250000002 82.623046875C248.61406250000002 79.91015625 247.07304687500002 78.26953125 244.50078125000002 78.26953125H241.57695312500002V87.0ZM242.91289062500002 85.828125V79.44140625H244.41289062500002C246.31718750000002 79.44140625 247.30156250000002 80.572265625 247.30156250000002 82.623046875C247.30156250000002 84.69140625 246.31718750000002 85.828125 244.34257812500002 85.828125ZM287.953515625 78.26953125H286.617578125V87.0H287.953515625ZM329.90625 87.1171875C332.16796875 87.1171875 333.837890625 85.4296875 333.837890625 82.640625C333.837890625 79.83984375 332.16796875 78.15234375 329.90625 78.15234375C327.638671875 78.15234375 325.962890625 79.83984375 325.962890625 82.640625C325.962890625 85.4296875 327.638671875 87.1171875 329.90625 87.1171875ZM329.90625 85.8984375C328.40625 85.8984375 327.287109375 84.75 327.287109375 82.640625C327.287109375 80.525390625 328.40625 79.37109375 329.90625 79.37109375C331.39453125 79.37109375 332.513671875 80.51953125 332.513671875 82.640625C332.513671875 84.75 331.39453125 85.8984375 329.90625 85.8984375Z" fill="#F3EDE2"/>
-<rect class="glint" x="-60" y="-10" width="26" height="110" fill="#FFFFFF" transform="skewX(-20)"/>
-</svg>
-<p data-k="ft">Logotip, animatsiya va bezak. Butun Özbekiston bölab.</p>
-<p>© 2026 Tamga Studio · <a href="https://t.me/tamgauz" target="_blank" rel="noopener">@tamgauz</a></p>
-</div></footer>
-<script>
-const T={"btn_tg": ["Telegramda yoziş", "Написать в Telegram"], "hero_h": ["Sizni tanitadigan belgi", "Знак, по которому вас узнают"], "hero_p": ["Butun Özbekiston bizneslari uçun logotip, animatsiya va bezak. Avval natija, keyin tölov.", "Логотип, анимация и оформление для бизнеса по всему Узбекистану. Сначала результат, потом оплата."], "h_how": ["Qanday işlaymiz", "Как мы работаем"], "s1": ["Telegramda nima bilan şuğullanişingizni yozasiz", "Вы пишете в Telegram, чем занимаетесь"], "s2": ["Biz 10 ta variant körsatamiz", "Мы показываем 10 вариантов"], "s3": ["Eng yaxşisini tanlaysiz, 3 ta tuzatiş bepul", "Выбираете лучший, 3 правки бесплатно"], "s4": ["Topşirilgandan keyin tölaysiz va fayllarni olasiz", "Платите после сдачи, получаете файлы"], "h_srv": ["Xizmatlar", "Услуги"], "v1t": ["Logotip", "Логотип"], "v1": ["Tanlaş uçun 10 variant, aniq geometriya, kiçik avatarda ham yaxşi körinadi.", "10 вариантов на выбор, строгая геометрия, читается даже на маленькой аватарке."], "v2t": ["Logotip animatsiyasi", "Анимация логотипа"], "v2": ["Çiziq, rang, harflar, yaltiraş. Soniyasiga 60 kadr, silliq. Post, storis va video uçun.", "Линия, заливка, буквы, блик. 60 кадров в секунду, плавно. Для постов, сторис и видео."], "v3t": ["Storis va muqovalar", "Сторис и обложки"], "v3": ["Doimiy storislar uçun ikonkalar, Telegram va Instagram muqovalari, post şablonlari.", "Иконки для закреплённых сторис, обложки Telegram и Instagram, шаблоны постов."], "v4t": ["QR menyu va narxlar", "Меню и прайс с QR"], "v4": ["Mehmon kamerani tutadi va menyu yoki narxlarni köradi.", "Гость наводит камеру и видит меню или цены."], "v5t": ["Mini sayt", "Мини-сайт"], "v5": ["Bir sahifa: siz kimsiz, nima taklif qilasiz, qanday boğlaniş mumkin.", "Одна страница: кто вы, что предлагаете, как связаться."], "v6t": ["Telegram bot", "Telegram-бот"], "v6": ["Siz band bölganingizda arizalarni qabul qiladi va köp beriladigan savollarga javob beradi.", "Принимает заявки и отвечает на частые вопросы, пока вы заняты."], "v7t": ["Brendbuk", "Брендбук"], "v7": ["Qoidalar: logotip, ranglar va şriftlardan qanday foydalaniş.", "Правила: как использовать логотип, цвета и шрифты."], "h_ex": ["Iş namunalari", "Примеры работ"], "ex_note": ["Demo keys, brend töqima", "Демо-кейс, бренд вымышлен"], "h_price": ["Narxlar", "Цены"], "p1n": ["Start", "Старт"], "p1p": ["500 000 söm", "500 000 сум"], "p1": ["Logotip yoki logotip animatsiyasi.", "Логотип или анимация логотипа."], "p2n": ["Brend", "Бренд"], "p2p": ["1 500 000 söm", "1 500 000 сум"], "p2": ["Logotip, animatsiya, storis, muqovalar va şablonlar.", "Логотип, анимация, сторис, обложки и шаблоны."], "p3n": ["Premium", "Премиум"], "p3p": ["3 000 000 söm", "3 000 000 сум"], "p3": ["«Brend»dagi hamma narsa, sayt, bot, QR menyu, xaritalar va brendbuk.", "Всё из «Бренда», сайт, бот, QR меню, карты и брендбук."], "p_note": ["Oldindan tölov yöq. Topşirilgandan keyin tölaysiz.", "Предоплаты нет. Платите после сдачи."], "h_why": ["Nega biz", "Почему мы"], "w1t": ["Oldindan tölovsiz.", "Без предоплаты."], "w1": ["Tayyor işni körasiz, keyin tölaysiz.", "Видите готовую работу и только потом платите."], "w2t": ["Tanlaş imkoni.", "Есть из чего выбрать."], "w2": ["10 ta logotip va 10 ta animatsiya varianti.", "10 вариантов логотипа и 10 вариантов анимации."], "w3t": ["Hammasi bir uslubda.", "Всё в одном стиле."], "w3": ["Logotip, storis, menyu, sayt va botni bitta jamoa qiladi.", "Логотип, сторис, меню, сайт и бот делает одна команда."], "h_faq": ["Savollar", "Частые вопросы"], "q1": ["Nega oldindan tölovsiz?", "Почему без предоплаты?"], "a1": ["Işimizga işonamiz. Natijani körasiz va yoqsa tölaysiz.", "Мы уверены в работе. Вы видите результат и платите, только если он нравится."], "q2": ["Birorta variant yoqmasa-çi?", "Что, если не понравится ни один вариант?"], "a2": ["Fikringizni hisobga olib yangilarini qilamiz. Ular ham mos kelmasa, heç narsa tölamaysiz.", "Сделаем новые с учётом ваших слов. Если и они не подойдут, вы ничего не платите."], "q3": ["Neçta tuzatiş?", "Сколько правок?"], "a3": ["3 ta tuzatiş bepul. Keyingilarini alohida kelişamiz.", "3 правки бесплатно. Дальше обсудим отдельно."], "q4": ["Qança kutiş kerak?", "Сколько ждать?"], "a4": ["Start 2 kun, Brend 5 kun, Premium 10 iş kuni.", "Старт 2 дня, Бренд 5 дней, Премиум 10 рабочих дней."], "q5": ["Qanday tölanadi?", "Как оплатить?"], "a5": ["Iş topşirilgandan keyin kartaga ötkaziş orqali.", "Переводом на карту после сдачи работы."], "q6": ["Nima olaman?", "Что я получу?"], "a6": ["Logotip SVG, PNG va PDF formatida, animatsiya post va storis uçun MP4 formatida, manba fayllar.", "Логотип в SVG, PNG и PDF, анимацию в MP4 для поста и сторис, исходные файлы."], "q7": ["Mening şahrim bilan işlaysizmi?", "Вы работаете с моим городом?"], "a7": ["Ha. Butun Özbekiston bölab Telegram orqali masofadan işlaymiz.", "Да. Работаем удалённо через Telegram по всему Узбекистану."], "q8": ["Özimning logotipimni qoldirsa böladimi?", "Можно оставить мой логотип?"], "a8": ["Ha. Logotipingizni özgartirmasdan animatsiya va bezak qilamiz.", "Да. Сделаем анимацию и оформление вокруг вашего логотипа, не меняя его."], "cta_h": ["Nima bilan şuğullanişingizni yozing. Birinçi variantlarni bepul körsatamiz.", "Напишите, чем вы занимаетесь. Первые варианты покажем бесплатно."], "cta_b": ["@tamgauz ga yoziş", "Написать @tamgauz"], "ft": ["Logotip, animatsiya va bezak. Butun Özbekiston bölab.", "Логотип, анимация и оформление. По всему Узбекистану."], "title": ["Tamga Studio: logotip va animatsiya biznes uçun", "Tamga Studio: логотип и анимация для бизнеса"], "desc": ["Butun Özbekiston bizneslari uçun logotip, animatsiya va bezak. Avval natija, keyin tölov.", "Логотип, анимация и оформление для бизнеса по всему Узбекистану. Сначала результат, потом оплата."]};
-function setLang(l){
- document.documentElement.lang=l; const i=l==="ru"?1:0;
- document.querySelectorAll("[data-k]").forEach(e=>{const v=T[e.dataset.k]; if(v) e.textContent=v[i];});
- document.title=T.title[i];
- const md=document.querySelector('meta[name="description"]'); if(md) md.content=T.desc[i];
- document.querySelectorAll(".lang button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.l===l)));
- try{localStorage.setItem("tamga_lang",l)}catch(e){}
-}
-document.querySelectorAll(".lang button").forEach(b=>b.addEventListener("click",()=>setLang(b.dataset.l)));
-let start="uz";
-try{const q=new URLSearchParams(location.search).get("lang");const s=localStorage.getItem("tamga_lang");start=q||s||"uz";}catch(e){}
-if(start==="ru") setLang("ru");
-</script>
+
+<footer>
+  <div class="wrap">
+    <svg viewBox="0 0 333.5 88" aria-hidden="true"><rect x="0" y="0" width="88" height="88" fill="#A8261B"/><path d="M18 22 H70 M44 22 V72" stroke="#F3EDE2" stroke-width="13" fill="none"/><g transform="translate(106 10) scale(1.3)"><path d="M0 40 L16 3.5 L32 40 M6.5 27 H25.5 M46.5 40 V3.5 L62 26 L77.5 3.5 V40 M125.98 10.02 A18.25 18.25 0 1 0 130.25 21.75 H114 M143 40 L159 3.5 L175 40 M149.5 27 H168.5" fill="none" stroke="#16130F" stroke-width="7" stroke-linejoin="miter" stroke-miterlimit="1"/></g><path d="M110.896484375 87.146484375C112.947265625 87.146484375 114.130859375 86.068359375 114.130859375 84.5859375C114.130859375 83.009765625 112.73046875 82.412109375 111.6171875 82.125L110.767578125 81.90234375C110.099609375 81.7265625 109.197265625 81.416015625 109.197265625 80.58984375C109.197265625 79.8515625 109.865234375 79.3125 110.92578125 79.3125C111.916015625 79.3125 112.625 79.76953125 112.712890625 80.56640625H114.013671875C113.97265625 79.177734375 112.748046875 78.15234375 110.955078125 78.15234375C109.197265625 78.15234375 107.861328125 79.154296875 107.861328125 80.666015625C107.861328125 81.861328125 108.705078125 82.59375 110.134765625 82.974609375L111.154296875 83.255859375C112.091796875 83.5078125 112.8125 83.806640625 112.8125 84.568359375C112.8125 85.412109375 111.998046875 85.974609375 110.890625 85.974609375C109.8828125 85.974609375 109.0390625 85.529296875 108.962890625 84.57421875H107.62109375C107.703125 86.16796875 108.93359375 87.146484375 110.896484375 87.146484375ZM151.659765625 79.41796875H154.384375V87.0H155.726171875V79.41796875H158.4390625V78.26953125H151.659765625ZM199.794140625 87.134765625C201.880078125 87.134765625 203.262890625 85.833984375 203.262890625 84.0V78.26953125H201.92109375V83.888671875C201.92109375 85.06640625 201.106640625 85.921875 199.794140625 85.921875C198.47578125 85.921875 197.649609375 85.06640625 197.649609375 83.888671875V78.26953125H196.313671875V84.0C196.313671875 85.833984375 197.690625 87.134765625 199.794140625 87.134765625ZM244.41875000000002 87.0C247.07304687500002 87.0 248.61406250000002 85.353515625 248.61406250000002 82.623046875C248.61406250000002 79.91015625 247.07304687500002 78.26953125 244.50078125000002 78.26953125H241.57695312500002V87.0ZM242.91289062500002 85.828125V79.44140625H244.41289062500002C246.31718750000002 79.44140625 247.30156250000002 80.572265625 247.30156250000002 82.623046875C247.30156250000002 84.69140625 246.31718750000002 85.828125 244.34257812500002 85.828125ZM287.953515625 78.26953125H286.617578125V87.0H287.953515625ZM329.90625 87.1171875C332.16796875 87.1171875 333.837890625 85.4296875 333.837890625 82.640625C333.837890625 79.83984375 332.16796875 78.15234375 329.90625 78.15234375C327.638671875 78.15234375 325.962890625 79.83984375 325.962890625 82.640625C325.962890625 85.4296875 327.638671875 87.1171875 329.90625 87.1171875ZM329.90625 85.8984375C328.40625 85.8984375 327.287109375 84.75 327.287109375 82.640625C327.287109375 80.525390625 328.40625 79.37109375 329.90625 79.37109375C331.39453125 79.37109375 332.513671875 80.51953125 332.513671875 82.640625C332.513671875 84.75 331.39453125 85.8984375 329.90625 85.8984375Z" fill="#16130F"/></svg>
+    <span data-k="foot">Tamga Studio. Butun Özbekiston bölab masofadan.</span>
+    <span><a href="https://t.me/tamgauz">t.me/tamgauz</a> &nbsp; <a href="https://t.me/tamgastudio_bot">@tamgastudio_bot</a></span>
+  </div>
+</footer>
+
+<script>window.__I18N={"uz": {"c0": "Qahvaxona, Samarqand", "c1": "Sartaroşxona, Namangan", "c2": "Stomatologiya, Andijon", "c3": "Gul dökoni, Buxoro", "c4": "Avtoservis, Qarşi", "c5": "Çoyxona, Farğona", "v0h": "Logotip", "v0p": "Tanlaş uçun 10 variant, aniq geometriya, kiçik avatarda ham yaxşi körinadi.", "v1h": "Logotip animatsiyasi", "v1p": "Çiziq, rang, harflar, yaltiraş. Soniyasiga 60 kadr, silliq. Post, storis va video uçun.", "v2h": "Storis va muqovalar", "v2p": "Doimiy storislar uçun ikonkalar, Telegram va Instagram muqovalari, post şablonlari.", "v3h": "QR menyu va narxlar", "v3p": "Mehmon kamerani tutadi va menyu yoki narxlarni köradi.", "v4h": "Mini sayt", "v4p": "Bir sahifa: siz kimsiz, nima taklif qilasiz, qanday boğlaniş mumkin.", "v5h": "Telegram bot", "v5p": "Siz band bölganingizda arizalarni qabul qiladi va köp beriladigan savollarga javob beradi.", "v6h": "Brendbuk", "v6p": "Qoidalar: logotip, ranglar va şriftlardan qanday foydalaniş.", "p0n": "Start", "p0d": "2 kun", "p0i0": "Logotip, 10 variant", "p0i1": "yoki logotip animatsiyasi, 10 variant", "p0i2": "Post va storis formatlari", "p1n": "Brend", "p1d": "5 kun", "p1i0": "Logotip, 10 variant", "p1i1": "Logotip animatsiyasi, 10 variant", "p1i2": "6 ta storis ikonkasi", "p1i3": "Telegram va Instagram muqovalari", "p1i4": "6 ta post şabloni", "p2n": "Premium", "p2d": "10 iş kuni", "p2i0": "«Brend»dagi hamma narsa", "p2i1": "QR menyu yoki narxlar", "p2i2": "Mini sayt", "p2i3": "Arizalar uçun Telegram bot", "p2i4": "Yandex va Google xaritalarida kartoçka", "p2i5": "Brendbuk", "h1a": "Sizni", "h1b": "tanitadigan", "h1c": "belgi", "cap": "Bitta belgi. Har joyda bir xil.", "scroll": "Pastga suring", "manifest": "Tamğa turkiy uruğlarda oila belgisi bölgan. Uni körib, nima kimniki ekanini bilişgan. Biz biznesingiz uçun şunday belgi yaratamiz: bir qaraşda tanilsin.", "m0": "Qahvaxona", "m1": "Sartaroşxona", "m2": "Klinika", "m3": "Gul dökoni", "m4": "Avtoservis", "m5": "Çoyxona", "m6": "Restoran", "m7": "Mehmonxona", "m8": "Salon", "m9": "Fitnes", "title": "Tamga Studio: logotip va animatsiya biznes uçun", "cta_short": "Telegramda yoziş", "cta": "Telegramda yoziş", "h1": "Sizni tanitadigan belgi", "lede": "Butun Özbekiston bizneslari uçun logotip, animatsiya va bezak. Avval natija, keyin tölov.", "cta_try": "Belgingizni köring", "note": "Oldindan tölov yöq. 3 ta tuzatiş bepul.", "hint": "Yana bir marta bosing", "try_h": "Belgingizni bir soniyada köring", "try_p": "Biznesingiz nomini yozing. Bu tez qoralama, haqiqiy 10 ta variantni qölda çizamiz.", "try_label": "Biznes nomi", "try_color": "Rang", "try_cta": "10 ta variant istayman", "try_small": "Variantlarni körib çiqing, yoqsa tölaysiz. Oldindan pul olmaymiz.", "replay": "Qayta körsatiş", "demo_sub": "Tamga qoralamasi", "how_h": "Qanday işlaymiz", "s1": "Telegramda nima bilan şuğullanişingizni yozasiz", "s2": "Biz 10 ta variant körsatamiz", "s3": "Eng yaxşisini tanlaysiz, 3 ta tuzatiş bepul", "s4": "Topşirilgandan keyin tölaysiz va fayllarni olasiz", "cases_h": "Iş namunalari", "cases_p": "Bular demo keyslar, brendlar töqima.", "svc_h": "Nima qilamiz", "pr_h": "Narxlar", "pr_p": "Narx oldindan maʼlum. Iş yoqmasa, tölamaysiz.", "cur": "söm", "rec": "Tavsiya", "choose": "Tanlaş", "t1": "Oldindan tölov yöq", "t2": "Topşirilgandan keyin kartaga tölov", "t3": "3 ta tuzatiş bepul", "why_h": "Nega Tamga", "w1h": "Oldindan tölovsiz", "w1p": "Tayyor işni körasiz, keyin tölaysiz.", "w2h": "Tanlaş imkoni", "w2p": "10 ta logotip va 10 ta animatsiya varianti.", "w3h": "Hammasi bir uslubda", "w3p": "Logotip, storis, menyu, sayt va botni bitta jamoa qiladi.", "faq_h": "Savollar", "fin_h": "Nima bilan şuğullanişingizni yozing", "fin_p": "Birinçi variantlarni bepul körsatamiz. Odatda bir soat içida javob beramiz.", "fin_cta": "@tamgauz ga yoziş", "foot": "Tamga Studio. Butun Özbekiston bölab masofadan."}, "ru": {"c0": "Кофейня, Самарканд", "c1": "Барбершоп, Наманган", "c2": "Стоматология, Андижан", "c3": "Цветочный магазин, Бухара", "c4": "Автосервис, Карши", "c5": "Чайхана, Фергана", "v0h": "Логотип", "v0p": "10 вариантов на выбор, строгая геометрия, читается даже на маленькой аватарке.", "v1h": "Анимация логотипа", "v1p": "Линия, заливка, буквы, блик. 60 кадров в секунду, плавно. Для постов, сторис и видео.", "v2h": "Сторис и обложки", "v2p": "Иконки для закреплённых сторис, обложки Telegram и Instagram, шаблоны постов.", "v3h": "Меню и прайс с QR", "v3p": "Гость наводит камеру и видит меню или цены.", "v4h": "Мини-сайт", "v4p": "Одна страница: кто вы, что предлагаете, как связаться.", "v5h": "Telegram-бот", "v5p": "Принимает заявки и отвечает на частые вопросы, пока вы заняты.", "v6h": "Брендбук", "v6p": "Правила: как использовать логотип, цвета и шрифты.", "p0n": "Старт", "p0d": "2 дня", "p0i0": "Логотип, 10 вариантов", "p0i1": "или анимация логотипа, 10 вариантов", "p0i2": "Форматы для поста и сторис", "p1n": "Бренд", "p1d": "5 дней", "p1i0": "Логотип, 10 вариантов", "p1i1": "Анимация логотипа, 10 вариантов", "p1i2": "6 иконок сторис", "p1i3": "Обложки Telegram и Instagram", "p1i4": "6 шаблонов постов", "p2n": "Премиум", "p2d": "10 рабочих дней", "p2i0": "Всё из «Бренда»", "p2i1": "Меню или прайс с QR", "p2i2": "Мини-сайт", "p2i3": "Telegram-бот для заявок", "p2i4": "Карточки на Яндекс и Google картах", "p2i5": "Брендбук", "h1a": "Знак,", "h1b": "по которому", "h1c": "вас узнают", "cap": "Один знак. Везде одинаковый.", "scroll": "Листайте вниз", "manifest": "У тюркских родов тамга была знаком семьи. По ней сразу понимали, чьё это. Мы делаем такой знак для вашего бизнеса, чтобы его узнавали с первого взгляда.", "m0": "Кофейня", "m1": "Барбершоп", "m2": "Клиника", "m3": "Цветы", "m4": "Автосервис", "m5": "Чайхана", "m6": "Ресторан", "m7": "Отель", "m8": "Салон", "m9": "Фитнес", "title": "Tamga Studio: логотипы и анимация для бизнеса", "cta_short": "Написать в Telegram", "cta": "Написать в Telegram", "h1": "Знак, по которому вас узнают", "lede": "Логотип, анимация и оформление для бизнеса по всему Узбекистану. Сначала результат, потом оплата.", "cta_try": "Посмотреть свой знак", "note": "Предоплаты нет. 3 правки бесплатно.", "hint": "Нажмите ещё раз", "try_h": "Посмотрите свой знак за секунду", "try_p": "Напишите название бизнеса. Это быстрый набросок, настоящие 10 вариантов мы рисуем вручную.", "try_label": "Название бизнеса", "try_color": "Цвет", "try_cta": "Хочу 10 вариантов", "try_small": "Посмотрите варианты и платите, только если понравится. Заранее денег не берём.", "replay": "Показать ещё раз", "demo_sub": "набросок от Tamga", "how_h": "Как мы работаем", "s1": "Вы пишете в Telegram, чем занимаетесь", "s2": "Мы показываем 10 вариантов", "s3": "Выбираете лучший, 3 правки бесплатно", "s4": "Платите после сдачи и получаете файлы", "cases_h": "Примеры работ", "cases_p": "Это демо-кейсы, бренды вымышлены.", "svc_h": "Что мы делаем", "pr_h": "Цены", "pr_p": "Цена известна заранее. Если работа не понравится, вы не платите.", "cur": "сум", "rec": "Советую", "choose": "Выбрать", "t1": "Предоплаты нет", "t2": "Оплата на карту после сдачи", "t3": "3 правки бесплатно", "why_h": "Почему Tamga", "w1h": "Без предоплаты", "w1p": "Видите готовую работу и только потом платите.", "w2h": "Есть из чего выбрать", "w2p": "10 вариантов логотипа и 10 вариантов анимации.", "w3h": "Всё в одном стиле", "w3p": "Логотип, сторис, меню, сайт и бот делает одна команда.", "faq_h": "Вопросы", "fin_h": "Напишите, чем вы занимаетесь", "fin_p": "Первые варианты покажем бесплатно. Отвечаем обычно в течение часа.", "fin_cta": "Написать @tamgauz", "foot": "Tamga Studio. Работаем удалённо по всему Узбекистану."}};window.__FAQ={"uz": [["Nega oldindan tölovsiz?", "Işimizga işonamiz. Natijani körasiz va yoqsa tölaysiz."], ["Birorta variant yoqmasa-çi?", "Fikringizni hisobga olib yangilarini qilamiz. Ular ham mos kelmasa, heç narsa tölamaysiz."], ["Neçta tuzatiş?", "3 ta tuzatiş bepul. Keyingilarini alohida kelişamiz."], ["Qança kutiş kerak?", "Start 2 kun, Brend 5 kun, Premium 10 iş kuni."], ["Qanday tölanadi?", "Iş topşirilgandan keyin kartaga ötkaziş orqali."], ["Nima olaman?", "Logotip SVG, PNG va PDF formatida, animatsiya post va storis uçun MP4 formatida, manba fayllar."], ["Mening şahrim bilan işlaysizmi?", "Ha. Butun Özbekiston bölab Telegram orqali masofadan işlaymiz."], ["Özimning logotipimni qoldirsa böladimi?", "Ha. Logotipingizni özgartirmasdan animatsiya va bezak qilamiz."]], "ru": [["Почему без предоплаты?", "Мы уверены в работе. Вы видите результат и платите, только если он нравится."], ["Что, если не понравится ни один вариант?", "Сделаем новые с учётом ваших слов. Если и они не подойдут, вы ничего не платите."], ["Сколько правок?", "3 правки бесплатно. Дальше обсудим отдельно."], ["Сколько ждать?", "Старт 2 дня, Бренд 5 дней, Премиум 10 рабочих дней."], ["Как оплатить?", "Переводом на карту после сдачи работы."], ["Что я получу?", "Логотип в SVG, PNG и PDF, анимацию в MP4 для поста и сторис, исходные файлы."], ["Вы работаете с моим городом?", "Да. Работаем удалённо через Telegram по всему Узбекистану."], ["Можно оставить мой логотип?", "Да. Сделаем анимацию и оформление вокруг вашего логотипа, не меняя его."]]};</script>
+<script src="js/app.js" defer></script>
 </body>
 </html>
